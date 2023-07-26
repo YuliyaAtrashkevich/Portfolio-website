@@ -16,8 +16,7 @@
     src: url(../fonts/Gilroy-Medium.woff);
 }
 
-.header {
-}
+.header {}
 
 .header__container {
     margin: 0 auto;
@@ -91,7 +90,7 @@
 }
 
 .greeting__lang-switcher {
-    transform: rotate(-90deg) translate(30px,30px);
+    transform: rotate(-90deg) translate(30px, 30px);
 }
 
 .greeting__lang-switcher-item {
@@ -109,18 +108,22 @@
 }
 
 @media (max-width: 980px) {
+
     .header__container,
     .greeting__container,
-    .about__container {
+    .about__container,
+    .skills__container {
         padding-left: 30px;
         padding-right: 30px;
     }
 }
 
 @media (max-width: 650px) {
+
     .header__container,
     .greeting__container,
-    .about__container {
+    .about__container,
+    .skills__container {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -142,9 +145,11 @@
 }
 
 @media (max-width: 480px) {
+
     .header__container,
     .greeting__container,
-    .about__container {
+    .about__container,
+    .skills__container {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -172,6 +177,7 @@
     padding-top: 112px;
     padding-bottom: 107px;
 }
+
 .about__container {
     max-width: 485px;
     margin: 0 auto;
@@ -194,4 +200,76 @@
 
 .about__text-p:last-child {
     padding-bottom: 0;
+}
+
+.skills {
+    padding-top: 92px;
+    padding-bottom: 92px;
+}
+
+.skills__container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 936px;
+}
+
+.skills__h2 {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 61px;
+}
+
+.skills__h3 {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 90px;
+}
+
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 90px;
+    justify-items: center;
+    align-items: center;
+}
+
+.skills__grid-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__icon {
+    margin-bottom: 18px;
+    display: block;
+}
+
+.skills__h4 {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    max-width: 80px;
+    margin-bottom: 40px;
+}
+
+.skills__stars {
+    display: block;
+}
+
+@media (max-width: 980px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
