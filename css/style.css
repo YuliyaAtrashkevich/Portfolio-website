@@ -113,7 +113,8 @@
     .greeting__container,
     .about__container,
     .skills__container,
-    .portfolio__container {
+    .portfolio__container,
+    .contacts__container {
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -329,6 +330,72 @@
     font-size: 18px;
     padding-bottom: 90px;
     color:#000000;
-
 }
 
+.contacts {
+    padding-top: 126px;
+    padding-bottom: 107px;
+}
+
+.contacts__container {
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+.contacts__h2 {
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.contacts__h3 {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.contacts__button {
+    display: block;
+    background-color: #000000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 auto 85px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    font-family: "Gilroy-Bold", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.contacts__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 42px;
+}
+
+.contacts__item {
+}
+
+.contacts__social-icon {
+}
+
+.contacts__h4 {
+    font-family: "Gilroy-Medium", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #828282;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
