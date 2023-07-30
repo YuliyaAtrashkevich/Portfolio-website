@@ -50,6 +50,7 @@
 
 .header__menu-item {
     list-style: none;
+    transition: all 0.2s ease-in;
 }
 
 .header__menu-link {
@@ -71,6 +72,23 @@
 
 .menu__burger {
     display: none;
+}
+
+.sidenav {
+    padding: 46px 26px;
+}
+
+.sidenav-close {
+    position: absolute;
+    top: 16px;
+    right: -42px;
+}
+
+.burger__lang-switcher {
+    position: relative;
+    /* bottom: 0;
+    right: -26px; */
+    transform: rotate(90deg) translate(130px, -130px);
 }
 
 .greeting {
@@ -108,12 +126,14 @@
     transform: rotate(-90deg) translate(30px, 30px);
 }
 
-.greeting__lang-switcher-item {
+.greeting__lang-switcher-item,
+.burger__lang-switcher-item {
     font-family: "Gilroy-Bold", sans-serif;
     font-size: 16px;
 }
 
-.greeting__lang-switcher .active {
+.greeting__lang-switcher .active,
+.burger__lang-switcher-item.active {
     font-weight: 900;
 }
 
@@ -281,6 +301,7 @@
 
 .skills__stars {
     display: block;
+    transition: all 0.2s ease-in;
 }
 
 .skills__stars:hover {
@@ -343,11 +364,36 @@
     margin-bottom: 40px;
 }
 
+.materialboxed {
+    display: block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .materialboxed:hover:not(.active) {
+    opacity: .8;
+  }
+  
+  .materialboxed.active {
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
+
+  .carousel.scrolling .carousel-item .materialboxed,
+  .carousel .carousel-item:not(.active) .materialboxed {
+    pointer-events: none;
+  }  
+
 .portfolio__h3 {
     text-align: center;
 }
 
 .portfolio__link {
+    text-decoration: underline;
     font-family: "Gilroy-Medium", sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -390,6 +436,7 @@
     border: none;
     border-radius: 20px;
     margin: 0 auto 85px;
+    transition: all 0.2s ease-in;
 }
 
 .contacts__button:hover {
@@ -413,6 +460,10 @@
 }
 
 .contacts__item {
+}
+
+.contacts__social-icon {
+    transition: all 0.2s ease-in;
 }
 
 .contacts__social-icon:hover {

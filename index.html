@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="css/style.css">
     <title>Denis Novik - UX/UI Designer</title>
 </head>
 
 <body>
-    
+
     <header class="header">
         <div class="header__container">
             <ul class="header__menu">
@@ -18,16 +23,32 @@
                 <li class="header__menu-item"><a href="#portfolio" class="header__menu-link">Portfolio</a></li>
                 <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Contacts</a></li>
             </ul>
-            <div class="menu__burger"><a href="#" class="menu__burger-link"><img src="img/menu_burger.svg" alt="Главное меню" class="menu__burger-img"></a></div>
+            <div data-target="slide-out" class="sidenav-trigger menu__burger" class="menu__burger"><a href="#" class="menu__burger-link"><img src="img/menu_burger.svg"
+                        alt="Главное меню" class="menu__burger-img"></a></div>
         </div>
     </header>
+
+    <!-- Всплывающее меню -->
+
+    <ul id="slide-out" class="sidenav">
+        <li class="header__menu-item"><a href="#" class="header__menu-link waves-effect active">Home</a></li>
+        <li class="header__menu-item"><a href="#about" class="header__menu-link waves-effect">About me</a></li>
+        <li class="header__menu-item"><a href="#skills" class="header__menu-link waves-effect">Skills</a></li>
+        <li class="header__menu-item"><a href="#portfolio" class="header__menu-link">Portfolio</a></li>
+        <li class="header__menu-item"><a href="#contacts" class="header__menu-link waves-effect">Contacts</a></li>
+       <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
+       <div class="burger__lang-switcher"><span class="burger__lang-switcher-item">RU </span><span
+        class="burger__lang-switcher-item active">| ENG</span></div>
+</div>
+     </ul>
 
     <section class="greeting">
         <div class="greeting__container">
             <div class="greeting__top">
                 <h2 class="greeting__h2">Denis<br>Novik</h2>
                 <h3 class="greeting__h3">UX|UI designer<br>24 years old, Minsk</h3>
-                <div class="greeting__lang-switcher"><span class="greeting__lang-switcher-item">RU </span><span class="greeting__lang-switcher-item active">| ENG</span></div>
+                <div class="greeting__lang-switcher"><span class="greeting__lang-switcher-item">RU </span><span
+                        class="greeting__lang-switcher-item active">| ENG</span></div>
             </div>
             <picture>
                 <source media="(max-width: 480px)" srcset="img/greeting_img_mobile.jpg">
@@ -39,7 +60,8 @@
     <section id="about" class="about">
         <div class="about__container">
             <h2 class="about_h2">About me</h2>
-            <p class="about__text-p">Hi, I'm Denis — UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.</p>
+            <p class="about__text-p">Hi, I'm Denis — UX/UI designer from Minsk.<br>I'm interested in design and
+                everything connected with it.</p>
             <p class="about__text-p">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
             <p class="about__text-p">Ready to implement excellent projects with wonderful people.</p>
         </div>
@@ -49,28 +71,28 @@
         <div class="skills__container">
             <h2 class="skills__h2">Skills</h2>
             <h3 class="skills__h3">I work in such programs as</h2>
-            <div class="skills__grid">
-                <div class="skills__grid-items">
-                    <img src="img/PS_icon.svg" alt="Photoshop" class="skills__icon">
-                    <h4 class="skills__h4">Adobe Photoshop</h4>
-                    <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
+                <div class="skills__grid">
+                    <div class="skills__grid-items">
+                        <img src="img/PS_icon.svg" alt="Photoshop" class="skills__icon">
+                        <h4 class="skills__h4">Adobe Photoshop</h4>
+                        <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
+                    </div>
+                    <div class="skills__grid-items">
+                        <img src="img/AI_icon.svg" alt="Adobe Illustrator" class="skills__icon">
+                        <h4 class="skills__h4">Adobe Illustrator</h4>
+                        <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
+                    </div>
+                    <div class="skills__grid-items">
+                        <img src="img/AAE_icon.svg" alt="Adobe After Effects" class="skills__icon">
+                        <h4 class="skills__h4">Adobe After Effects</h4>
+                        <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
+                    </div>
+                    <div class="skills__grid-items">
+                        <img src="img/Figma_icon.svg" alt="Figma" class="skills__icon">
+                        <h4 class="skills__h4">Figma</h4>
+                        <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
+                    </div>
                 </div>
-                <div class="skills__grid-items">
-                    <img src="img/AI_icon.svg" alt="Adobe Illustrator" class="skills__icon">
-                    <h4 class="skills__h4">Adobe Illustrator</h4>
-                    <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
-                </div>
-                <div class="skills__grid-items">
-                    <img src="img/AAE_icon.svg" alt="Adobe After Effects" class="skills__icon">
-                    <h4 class="skills__h4">Adobe After Effects</h4>
-                    <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
-                </div>
-                <div class="skills__grid-items">
-                    <img src="img/Figma_icon.svg" alt="Figma" class="skills__icon">
-                    <h4 class="skills__h4">Figma</h4>
-                    <img src="img/skills_stars.svg" alt="Stars" class="skills__stars">
-                </div>
-            </div>
         </div>
     </section>
 
@@ -80,20 +102,21 @@
             <div class="portfolio__flex">
                 <div class="portfolio__flex-item">
                     <div class="portfolio__img-container">
-                        <img src="img/portfolio_01.png" alt="Online Fashion Store" class="portfolio__img">
+                        <img src="img/portfolio_01.png" alt="Online Fashion Store" class="portfolio__img materialboxed">
                     </div>
-                    <h3 class="portfolio__h3"><a href="#" class="portfolio__link">Online fashion store - Homepage</a></h3>
+                    <h3 class="portfolio__h3"><a href="#" class="portfolio__link">Online fashion store - Homepage</a>
+                    </h3>
                 </div>
                 <div class="portfolio__flex-item">
                     <div class="portfolio__img-container">
-                        <img src="img/portfolio_02.png" alt="Reebok Store" class="portfolio__img">
+                        <img src="img/portfolio_02.png" alt="Reebok Store" class="portfolio__img materialboxed">
                     </div>
                     <h3 class="portfolio__h3"><a href="#" class="portfolio__link">Reebok Store - Concept</a></h3>
                 </div>
             </div>
             <div class="portfolio__flex-item">
                 <div class="portfolio__img-container">
-                    <img src="img/portfolio_03.png" alt="Braun Landing Page" class="portfolio__img">
+                    <img src="img/portfolio_03.png" alt="Braun Landing Page" class="portfolio__img materialboxed">
                 </div>
                 <h3 class="portfolio__h3"><a href="#" class="portfolio__link">Braun Landing Page - Concept</a></h3>
             </div>
@@ -105,24 +128,31 @@
         <div class="contacts__container">
             <h2 class="contacts__h2">Contacts</h2>
             <h3 class="contacts__h3">Want to know more or just chat?<br>You are welcome!</h2>
-            <button class="contacts__button"><a href="#" class="contacts__link">Send message</a></button>
-            <div class="contacts__flex">
-                <div class="contacts__item">
-                    <a href="#" class="contacts__link"><img src="img/icon_linkedin.svg" alt="LinkedIn" class="contacts__social-icon"></a>
+                <button class="contacts__button"><a href="#" class="contacts__link">Send message</a></button>
+                <div class="contacts__flex">
+                    <div class="contacts__item">
+                        <a href="#" class="contacts__link"><img src="img/icon_linkedin.svg" alt="LinkedIn"
+                                class="contacts__social-icon"></a>
+                    </div>
+                    <div class="contacts__item">
+                        <a href="#" class="contacts__link"><img src="img/icon_instagram.svg" alt="Instagram"
+                                class="contacts__social-icon"></a>
+                    </div>
+                    <div class="contacts__item">
+                        <a href="#" class="contacts__link"><img src="img/icon_behance.svg" alt="Behance"
+                                class="contacts__social-icon"></a>
+                    </div>
+                    <div class="contacts__item">
+                        <a href="#" class="contacts__link"><img src="img/icon_dribble.svg" alt="Dribble"
+                                class="contacts__social-icon"></a>
+                    </div>
                 </div>
-                <div class="contacts__item">
-                    <a href="#" class="contacts__link"><img src="img/icon_instagram.svg" alt="Instagram" class="contacts__social-icon"></a>
-                </div>
-                <div class="contacts__item">
-                    <a href="#" class="contacts__link"><img src="img/icon_behance.svg" alt="Behance" class="contacts__social-icon"></a>
-                </div>
-                <div class="contacts__item">
-                    <a href="#" class="contacts__link"><img src="img/icon_dribble.svg" alt="Dribble" class="contacts__social-icon"></a>
-                </div>
-            </div>
-            <h4 class="contacts__h4">Like me on<br>LinkedIn, Instagram, Behance, Dribble</h4>
+                <h4 class="contacts__h4">Like me on<br>LinkedIn, Instagram, Behance, Dribble</h4>
         </div>
     </section>
 
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
