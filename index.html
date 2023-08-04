@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Denis Novik - UX/UI Designer</title>
 </head>
@@ -23,8 +21,9 @@
                 <li class="header__menu-item"><a href="#portfolio" class="header__menu-link">Portfolio</a></li>
                 <li class="header__menu-item"><a href="#contacts" class="header__menu-link">Contacts</a></li>
             </ul>
-            <div data-target="slide-out" class="sidenav-trigger menu__burger" class="menu__burger"><a href="#" class="menu__burger-link"><img src="img/menu_burger.svg"
-                        alt="Главное меню" class="menu__burger-img"></a></div>
+            <div data-target="slide-out" class="sidenav-trigger menu__burger" class="menu__burger"><a href="#"
+                    class="menu__burger-link"><img src="img/menu_burger.svg" alt="Главное меню"
+                        class="menu__burger-img"></a></div>
         </div>
     </header>
 
@@ -36,11 +35,11 @@
         <li class="header__menu-item"><a href="#skills" class="header__menu-link waves-effect">Skills</a></li>
         <li class="header__menu-item"><a href="#portfolio" class="header__menu-link waves-effect">Portfolio</a></li>
         <li class="header__menu-item"><a href="#contacts" class="header__menu-link waves-effect">Contacts</a></li>
-       <div><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></div>
-       <div class="burger__lang-switcher"><span class="burger__lang-switcher-item">RU </span><span
-        class="burger__lang-switcher-item active">| ENG</span></div>
-</div>
-     </ul>
+        <div><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></div>
+        <div class="burger__lang-switcher"><span class="burger__lang-switcher-item">RU </span><span
+                class="burger__lang-switcher-item active">| ENG</span></div>
+        </div>
+    </ul>
 
     <section class="greeting">
         <div class="greeting__container">
@@ -128,28 +127,50 @@
         <div class="contacts__container">
             <h2 class="contacts__h2">Contacts</h2>
             <h3 class="contacts__h3">Want to know more or just chat?<br>You are welcome!</h2>
-                <button class="contacts__button"><a href="#" class="contacts__link">Send message</a></button>
-                <div class="contacts__flex">
-                    <div class="contacts__item">
-                        <a href="http://linkedin.com/" class="contacts__link"><img src="img/icon_linkedin.svg" alt="LinkedIn"
-                                class="contacts__social-icon"></a>
-                    </div>
-                    <div class="contacts__item">
-                        <a href="https://www.instagram.com/" class="contacts__link"><img src="img/icon_instagram.svg" alt="Instagram"
-                                class="contacts__social-icon"></a>
-                    </div>
-                    <div class="contacts__item">
-                        <a href="https://www.behance.net/" class="contacts__link"><img src="img/icon_behance.svg" alt="Behance"
-                                class="contacts__social-icon"></a>
-                    </div>
-                    <div class="contacts__item">
-                        <a href="https://dribbble.com" class="contacts__link"><img src="img/icon_dribble.svg" alt="Dribble"
-                                class="contacts__social-icon"></a>
-                    </div>
+            <a class="modal-trigger contacts__link" href="#modal1">Send message</a>
+            <div class="contacts__flex">
+                <div class="contacts__item">
+                    <a href="http://linkedin.com/"><img src="img/icon_linkedin.svg"
+                                alt="LinkedIn" class="contacts__icon"></a>
                 </div>
-                <h4 class="contacts__h4">Like me on<br>LinkedIn, Instagram, Behance, Dribble</h4>
+                <div class="contacts__item">
+                    <a href="https://www.instagram.com/"><img src="img/icon_instagram.svg"
+                                alt="Instagram" class="contacts__icon"></a>
+                </div>
+                <div class="contacts__item">
+                    <a href="https://www.behance.net/"><img src="img/icon_behance.svg"
+                                alt="Behance" class="contacts__icon"></a>
+                </div>
+                <div class="contacts__item">
+                    <a href="https://dribbble.com"><img src="img/icon_dribble.svg"
+                                alt="Dribble" class="contacts__icon"></a>
+                </div>
+            </div>
+            <h4 class="contacts__h4">Like me on<br>LinkedIn, Instagram, Behance, Dribble</h4>
         </div>
     </section>
+
+    <!-- Форма обратной связи -->
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <form action="" class="form">
+            <h2 class="form__h2">Please, send your request</h2>
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your e-mail">
+            <input type="tel" name="tel" placeholder="Your phone number" required>
+            <select name="project" id="project">
+                <option value="Choose type of project" selected disabled>Choose type of project</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Online store">Online store</option>
+                <option value="Portfolio website">Portfolio website</option>
+                <option value="Other">Other</option>
+            </select>
+        </form>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close contacts__link">Send</a>
+        </div>
+    </div>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
